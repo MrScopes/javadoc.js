@@ -1,4 +1,8 @@
 {
+    "name": "javadoc.js",
+    "version": "1.0.0",
+    "author": "MrScopes",
+    "license": "MIT",
     "scripts": {
         "start": "ts-node src/index"
     },
