@@ -2,7 +2,8 @@ import fs from 'fs';
 import { fetchConvert } from '../utilities/fetchConvert';
 import { GeneratedClass } from '../types';
 
-export async function fetchMethods(classes: GeneratedClass[]) {
+export async function generateMethods(classes: GeneratedClass[]) {
+    /*
     for (let i = 0; i < classes.length; i++) {
         const methodHTML = await fetchConvert(classes[i].url);
         console.log(`${classes[i].type} ${classes[i].name}`);
@@ -16,8 +17,10 @@ export async function fetchMethods(classes: GeneratedClass[]) {
                 
             }
         }
-
-        /** Visualizer */
-        return fs.writeFileSync('./out.html', methodHTML.toString());
+        
+         return fs.writeFileSync('./out.html', methodHTML.toString());
     }
+    */
+
+    return classes;
 }

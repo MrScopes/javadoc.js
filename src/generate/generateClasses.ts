@@ -1,7 +1,7 @@
 import { fetchConvert } from '../utilities/fetchConvert';
 import { GeneratedClass } from '../types';
 
-export async function fetchClasses(url: string) {
+export async function generateClasses(url: string) {
     const classesHTML = await fetchConvert(url + '/allclasses-noframe.html');
     const classesBody = classesHTML.find('body').contents[1].nextElement;
     
